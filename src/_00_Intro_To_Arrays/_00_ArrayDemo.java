@@ -26,7 +26,7 @@ public class _00_ArrayDemo {
         
         for(int i = 0; i < names.length; i++){
             String s = names[i];
-            System.out.println("String at element " + i + " " + s);
+            System.out.println("String at element " + i + ": " + s);
         }
         System.out.println("\n");
 
