@@ -4,10 +4,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 
-import javax.swing.Box.Filler;
 import javax.swing.JPanel;
-
-import sun.java2d.loops.DrawRect;
 
 public class GridPanel extends JPanel{
 
