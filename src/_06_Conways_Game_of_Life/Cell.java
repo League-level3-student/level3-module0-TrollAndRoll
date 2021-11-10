@@ -34,12 +34,15 @@ public class Cell implements Drawable {
 	 * if by reproduction. (source: Wikipedia)
 	 */
 	public void liveOrDie(int numNeighbors) {
-		if (numNeighbors < 2 || numNeighbors > 3) {
-			isAlive = false;
-		} else if (numNeighbors == 2 || numNeighbors == 3) {
-			isAlive = true;
-		} else if (numNeighbors == 3 && isAlive == false) {
-			isAlive = true;
+		if(isAlive == true) {
+			if(numNeighbors < 2 || numNeighbors > 3) {
+				isAlive = false;
+			}
+		}
+		else {
+			if(numNeighbors == 3) {
+				isAlive = true;
+			}
 		}
 	}
 
